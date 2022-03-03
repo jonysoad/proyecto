@@ -5,7 +5,7 @@
 
 
 .Header{
-    display: flex;
+    
     background-image: url(../images/FondoNav.png);
     min-height: 100vh;
     background-size: cover;
@@ -32,7 +32,8 @@
     }
     
 
-  
+
+/*  
 .DivNav {
     display: flex;
     flex-direction: row;
@@ -63,7 +64,7 @@ h1{
 
         
 }
-
+*/
 
 .DivPadre {
     display: grid;
@@ -298,9 +299,9 @@ margin-left: 80px;
 
 /*Pagina Multimedia----------------------------------------------------------*/
 .HeaderMultimedia {
-    display: flex;
+    
     background-image: url(../images/FondoNavMulti.jpg);
-    min-height: 100vh;
+    min-height: 60vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -310,6 +311,39 @@ margin-left: 80px;
     width: 100%;
 
 }
+
+.navbar-expand-lg .navbar-collapse {
+    flex-direction: row-reverse;
+
+}
+
+.navbar-nav {
+    align-items: flex-end;
+}
+
+.carousel-item{
+    height: 30rem;
+}
+
+.carousel-item {
+    background-position: center;
+    background-size: cover;
+   
+}
+
+.card-header {
+    color: white;
+}
+.TituloVideoMultimedia{
+color: white;
+}
+
+.MultimediaMain{
+    background-color: black;
+    text-align: center;
+}
+
+/*
 
 .MainMulti{
     background-image: url(../images/fondoMulti.jpg);
@@ -403,6 +437,7 @@ margin-left: 80px;
     color: white;
     text-align: center;
 }
+*/
 
 .VideoMulti01 {
     display: flex;
