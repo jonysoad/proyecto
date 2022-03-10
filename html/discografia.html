@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../images/cruz.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,88 +14,225 @@
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=MedievalSharp&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Discografia</title>
 </head>
 <script src="https://kit.fontawesome.com/06d0adc4d6.js" crossorigin="anonymous"></script>
 
 <body>
     <header>
-       
-    <nav>
-        <h1>Ghost B.C - Estamos en Discografia</h1>
-        <div>
-       
-            <div class="DivLogo"><img src="../images/logo.png">
-            </div>
-       
-        <ul> 
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="discografia.html">Discografia</a></li>
-            <li><a href="historia.html">Historia</a></li>
-            <li><a href="multimedia.html">Multimedia</a></li>
-            <li><a href="contacto.html">Contacto</a></li>   
-        </ul>
-    </nav>
-    <hr/>
-</header>
-
-    <main>
-        <div id="DivPadre">
-
-            <div class="DivFotoPresentacion">
-                <img src="../images/GhostTranspng.png">
-            </div>
-
+        
+        <!--<header class="HeaderMultimedia."> -->
+            
         
 
-            <div class="Divtitulo">
-            <h2>-Discografia</h2>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Ghost</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="discografia.html">Discografia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Historia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="multimedia.html">Multimedia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+      
+          </header>
+          
+          <main class="MultimediaMain">
+
+          
+        
+            <div class="card-header">
+                 <h4>Discografia</h4>
             </div>
-            <img src="../images/resumenDiscografia.jpg">
-            <section>
-            <div class="DivDiscografia">
+            <div class="card-body">
+              <div id="miCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="2"></button>
+                  <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="3"></button>
+                  <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="4"></button>
+                  <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="5"></button>
+                  <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="6"></button>
+                  <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="7"></button>
+                  <button type="button" data-bs-target="#miCarousel" data-bs-slide-to="8"></button>
+                  
+      
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" style="background-image: url(../images/07Opus-Eponymous.jpeg)">
+                   
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>2010</h4>
+                      <p>Opus Eponymous </p>
+                    </div>
+                    
+                  </div>
+      
+                  <div class="carousel-item" style="background-image: url(../images/06Infestissumam.jpeg)">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>2013</h4>
+                      <p>Infestissumam</p>
+                    </div>
+                    
+                  </div>
+      
+                  <div class="carousel-item" style="background-image: url(../images/05If-You-Have-Ghost.jpeg)">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>2013</h4>
+                      <p>If You Have Ghost</p>
+                    </div>
+                    
+                  </div>
+      
+                  <div class="carousel-item" style="background-image: url(../images/04Meliora.jpeg)">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>2015</h4>
+                      <p>Meliora</p>
+                    </div>
+                    
+                  </div>
+      
+                  <div class="carousel-item" style="background-image: url(../images/03Popestar.jpeg)">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>2016</h4>
+                      <p>Popestar</p>
+                    </div>
+                    
+                  </div>
+      
+                  <div class="carousel-item" style="background-image: url(../images/02ghost_ceremony_devotion.jpeg)"">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>2017</h4>
+                      <p>Ceremony and Devotion</p>
+                    </div>
+                    
+                  </div>
 
-                <iframe src="https://open.spotify.com/embed/album/0K1mTbmQQ6pcVLoxgk6WMq?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                  <div class="carousel-item" style="background-image: url(../images/01ghost-prequelle.jpeg)">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>2018</h4>
+                      <p>Prequelle</p>
+                    </div>
+                    
+                  </div>
 
-                <iframe src="https://open.spotify.com/embed/album/6128JCa2uBqHWia5AzJOKV?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                  <div class="carousel-item" style="background-image: url(../images/08Hunters-Moon.jpeg)">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>2021</h4>
+                      <p>Hunter's Moon</p>
+                    </div>
+                    
+                  </div>
 
-                <iframe src="https://open.spotify.com/embed/album/0fcqTPtiSVVeA8rYxbNuOw?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                  <div class="carousel-item" style="background-image: url(../images/09ghost-impera.jpeg)">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>2022</h4>
+                      <p>Impera</p>
+                    </div>
+                    
+                  </div>
 
-                <iframe src="https://open.spotify.com/embed/album/2uaQ1K2eSqaWeVQRXeuGdN?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-
-                <iframe src="https://open.spotify.com/embed/album/32CbQps06lUasiux6N8tP3?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-
-                <iframe src="https://open.spotify.com/embed/album/7xusHmkJUWt1XqPrM3pC9U?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-
-
-
-
+                 
+      
+                  
+      
+                  <button type="button" class="carousel-control-prev" type="button" data-bs-target="#miCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                    </button>   
+      
+                    <button type="button" class="carousel-control-next" type="button" data-bs-target="#miCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Next</span>
+                      </button>  
+      
+                      
+      
+                </div>
+      
+              </div>
+      
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quo reprehenderit architecto iusto eos fugit non? Corporis doloribus, consequatur totam dolores ad voluptates ex minima porro accusantium commodi rerum nisi.</p>
+            <div class="container">
+            <hr>
+
+            <div class="row">
+              <div class="col-4"> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7xusHmkJUWt1XqPrM3pC9U?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> </div>
+              <div class="col-4"> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/32CbQps06lUasiux6N8tP3?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> </div>
+              <div class="col-4"> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7wcMxzlZFIxccoeiSix0O2?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> </div> 
+            </div>
+
+            <hr>
+
+            <div class="row">
+              <div class="col-4"> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0fcqTPtiSVVeA8rYxbNuOw?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> </div>
+              <div class="col-4"> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2dvkDpC9uYe8chERNs7iYv?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> </div>
+              <div class="col-4"> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6128JCa2uBqHWia5AzJOKV?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> </div> 
+            </div>  
+            <hr>
+            <div class="row">
+              <div class="col-4"> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3rBn9ZuDULTYNitBUO5ov1?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> </div> 
+              <div class="col-4"> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4W6MuwB3D4fjc0kLlUKZEl?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> </div> 
+              <div class="col-4"> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO12mjqo?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> </div> 
+              <hr>
+            </div> 
             
-        </section>
-    </div>
+
+
+
+
+          </div>
 
     </main>
     <footer>
         
-        <div>
-        <p>Power by Jonatan Lescano</p>
+        <div class="DivPowerBy">
+          <p>Power by Jonatan Lescano</p>
         </div>
         
         <div class="DivBotonesFooter">
             
-        <a href="https://twitter.com/thebandGHOST?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+          <a href="https://twitter.com/thebandGHOST?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
             <i class="fab fa-twitter"></i>
-          </a> 
+          </a>
+
           <a href="https://es-la.facebook.com/thebandghost">
             <i class="fab fa-facebook"></i>
-          </a> 
+          </a>
+
           <a href="https://www.youtube.com/channel/UCAOiVaJJlH0Oduv48NN0mMA">
             <i class="fab fa-youtube"></i>
           </a> 
         </div>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
