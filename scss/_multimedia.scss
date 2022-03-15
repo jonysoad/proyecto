@@ -1,0 +1,127 @@
+
+/*Pagina Multimedia----------------------------------------------------------*/
+.HeaderMultimedia {
+    
+    background-image: url(../images/FondoNavMulti.jpg);
+    min-height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.navbar-expand-lg .navbar-collapse {
+    flex-direction: row-reverse;
+
+}
+
+.navbar-nav {
+    align-items: flex-end;
+}
+
+.carousel-item{
+    height: 30rem;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.card-header {
+    color: $secondColor;
+}
+
+.TituloVideoMultimedia{
+color: $secondColor;
+}
+
+.MultimediaMain{
+    background-color: $mainColor;
+    text-align: center;
+}
+
+
+
+.VideoMulti01 {
+    display: flex;
+    justify-content:space-around;
+    
+
+   
+    
+}
+
+
+/******* MEDIA QUIERIES *********/
+
+@media screen and (max-width: 768px) {
+
+    .DivPadreMultimedia {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "titulo titulo"
+        "foto1 foto2"
+        "foto3 foto4"
+        "foto5 foto6"
+        "tituloV tituloV";
+        gap: 20px;
+    }
+
+    .Enlaces{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .VideoMulti01 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .DivPadreMultimedia {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "titulo"
+        "foto1" 
+        "foto2"
+        "foto3"
+        "foto4"
+        "foto5"
+        "foto6"
+        "tituloV";
+        gap: 20px;
+    }
+
+    .Enlaces{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .VideoMulti01 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+}
+

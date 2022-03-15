@@ -1,0 +1,182 @@
+.Header{
+    
+    background-image: url(../images/FondoNav.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+
+    height: 100%;
+    width: 100%;
+    
+    &:before {
+        content: "";
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        top:0;
+        left: 0;
+        background: linear-gradient(rgb(255, 255, 255),black);
+        opacity: 0.7;
+        z-index: -1;
+        
+    }
+
+    }
+    
+   
+.hero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "tituloIndex tituloIndex tituloIndex"
+                         "textoIndex textoIndex fotoContenido"
+                         "textoIndex textoIndex fotoContenido"
+                         "fotoGira fotoGira fotoGira";
+
+    
+                          
+                          
+    
+    background-color: $mainColor;
+    
+    &_title {
+        grid-area: tituloIndex;
+        text-align: center;
+        color: $secondColor;
+        margin-top: 30px;
+    }
+
+    &_contents {
+        grid-area: textoIndex;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+        flex-wrap: nowrap;
+        padding: 30px;
+        color: $secondColor;
+    }
+    
+}
+
+
+.DivFoto {
+    grid-area: fotoContenido;
+    width: auto;
+    height: auto;
+    margin: 30px;
+}
+.FotoContenido {
+    object-fit: contain;
+}
+
+.DivFotoGira {
+    grid-area: fotoGira;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: $mainColor;
+    
+}
+
+.Gira2021 {
+    object-fit: cover;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+}
+
+
+
+.DivPowerBy{
+    color: $secondColor;
+}
+
+.DivBotonesFooter {
+    text-align: right;
+    font-size: 30px;
+
+}
+/******* MEDIA QUIERIES *********/
+
+@media screen and (max-width: 768px) {
+
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "tituloIndex tituloIndex"
+        "textoIndex fotoContenido"
+        "fotoGira fotoGira"
+        "fotoGira fotoGira"
+        "fotoGira fotoGira";
+        gap: 20px;
+    }
+
+    .Enlaces{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .DivFotoGira {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "tituloIndex"
+        "textoIndex" 
+        "fotoContenido"
+        "fotoGira";
+        gap: 20px;
+    }
+
+    .Enlaces{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .Gira2021{
+        object-fit: cover;
+    }
+    .DivFotoGira {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
