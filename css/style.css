@@ -68,6 +68,10 @@
 img {
   max-width: 100%; }
 
+.enlacesFooter {
+  text-decoration: none;
+  color: #030303; }
+
 a {
   text-decoration: none;
   color: #030303; }
@@ -83,8 +87,8 @@ a {
 @media screen and (max-width: 768px) {
   .hero {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "tituloIndex tituloIndex" "textoIndex fotoContenido" "fotoGira fotoGira" "fotoGira fotoGira" "fotoGira fotoGira";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "tituloIndex" "textoIndex"  "fotoContenido" "fotoGira";
     gap: 20px; }
   .Enlaces {
     display: flex;
@@ -159,10 +163,13 @@ a {
 
 .ucard {
   max-width: 300px;
-  text-align: center; }
+  height: 596px;
+  text-align: center;
+  color: #e7e7e7;
+  margin: 20px; }
 
 .card, .ucard {
-  background-color: #fff;
+  background-color: #1e1b26;
   border-radius: 4px;
   padding: 16px;
   box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.15); }
@@ -181,82 +188,33 @@ a {
 .small, .ucard > small {
   font-weight: 400;
   font-size: 12px;
-  opacity: 0.75; }
+  opacity: 0.75;
+  color: #e7e7e7; }
 
-/*
-.MainHistoria{
-    background-color: $mainColor;
-}
+/******* MEDIA QUIERIES *********/
+@media screen and (max-width: 891px) {
+  .section2Historia {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: space-evenly; } }
 
-.DivTextoHistoria01 {
-    @include flex(flex , row , nowrap , center , center)
-}
+@media screen and (max-width: 768px) {
+  .section2Historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
+@media screen and (max-width: 600px) {
+  .section2Historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
-.DivFotoHistoria{
-    margin-left: 80px;
-    }
-    
-    .DivTextoHistoria01{
-        display: inline-block;
-        height: 100%;
-        width: 30%;
-        font-family: 'Roboto', sans-serif;
-        font-size: 26px;
-        color: $secondColor;
-        margin-left: 80px;
-        margin-top: 30px;
-        padding-bottom: 50px;
-        
-        
-    }
-    
-    .DivTextoHistoria02{
-        display: inline-block;
-        height: 100%;
-        width: 30%;
-        font-family: 'Roboto', sans-serif;
-        font-size: 26px;
-        color: $secondColor;
-        margin-left: 80px;
-        margin-top: 30px;
-        padding-bottom: 50px;
-        
-        
-    }
-    
-    .DivTextoHistoria03{
-        display: inline-block;
-        height: 100%;
-        width: 30%;
-        font-family: 'Roboto', sans-serif;
-        font-size: 26px;
-        color: $secondColor;
-        margin-left: 100px;
-        margin-top: 30px;
-        padding-bottom: 50px;
-        
-        
-    }
-    
-    .DivVideoHistoria01{
-        display: inline-block;
-        height: 100%;
-        width: 30%;
-        margin-left: 80px;
-        margin-top: 30px;
-        padding-bottom: 50px;
-    }
-    
-    .DivVideoHistoria02{
-        display: inline-block;
-        height: 100%;
-        width: 30%;
-        margin-left: 80px;
-        margin-top: 30px;
-        padding-bottom: 50px;
-    }
-    */
 /*Pagina Multimedia----------------------------------------------------------*/
 .HeaderMultimedia {
   background-image: url(../images/FondoNavMulti.jpg);
@@ -341,6 +299,14 @@ a {
 
 .col-6 {
   color: #fafafa; }
+
+/******* MEDIA QUIERIES *********/
+@media screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 * {
   margin: 0;

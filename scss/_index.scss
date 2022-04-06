@@ -96,7 +96,10 @@ img {
     max-width: 100%;
 }
 
-
+.enlacesFooter{
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+}
 
 a{
     text-decoration: none;
@@ -120,13 +123,12 @@ a{
 
     .hero {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-areas: 
-        "tituloIndex tituloIndex"
-        "textoIndex fotoContenido"
-        "fotoGira fotoGira"
-        "fotoGira fotoGira"
-        "fotoGira fotoGira";
+        "tituloIndex"
+        "textoIndex" 
+        "fotoContenido"
+        "fotoGira";
         gap: 20px;
     }
 

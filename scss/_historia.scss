@@ -69,7 +69,10 @@
 .ucard {
     @extend .card;
     max-width: 300px;
+    height: 596px;
     text-align: center;
+    color: #e7e7e7;
+    margin: 20px;
     >img {
         @extend.avatar;
     
@@ -86,7 +89,7 @@
 
 
 .card {
-    background-color: #fff;
+    background-color: #1e1b26;
     border-radius: 4px;
     padding: 16px;
     box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.15);
@@ -110,81 +113,39 @@
     font-weight: 400;
     font-size: 12px;
     opacity: 0.75;
+    color: #e7e7e7;
 
 }
 
+/******* MEDIA QUIERIES *********/
+    @media screen and (max-width: 891px) {
+        
+        .section2Historia {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: space-evenly;
+        }
+    }
 
-/*
-.MainHistoria{
-    background-color: $mainColor;
-}
+    @media screen and (max-width: 768px) {
+        
+        .section2Historia {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 
-.DivTextoHistoria01 {
-    @include flex(flex , row , nowrap , center , center)
-}
+    @media screen and (max-width: 600px) {
 
-
-.DivFotoHistoria{
-    margin-left: 80px;
+        .section2Historia {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
-    
-    .DivTextoHistoria01{
-        display: inline-block;
-        height: 100%;
-        width: 30%;
-        font-family: 'Roboto', sans-serif;
-        font-size: 26px;
-        color: $secondColor;
-        margin-left: 80px;
-        margin-top: 30px;
-        padding-bottom: 50px;
-        
-        
-    }
-    
-    .DivTextoHistoria02{
-        display: inline-block;
-        height: 100%;
-        width: 30%;
-        font-family: 'Roboto', sans-serif;
-        font-size: 26px;
-        color: $secondColor;
-        margin-left: 80px;
-        margin-top: 30px;
-        padding-bottom: 50px;
-        
-        
-    }
-    
-    .DivTextoHistoria03{
-        display: inline-block;
-        height: 100%;
-        width: 30%;
-        font-family: 'Roboto', sans-serif;
-        font-size: 26px;
-        color: $secondColor;
-        margin-left: 100px;
-        margin-top: 30px;
-        padding-bottom: 50px;
-        
-        
-    }
-    
-    .DivVideoHistoria01{
-        display: inline-block;
-        height: 100%;
-        width: 30%;
-        margin-left: 80px;
-        margin-top: 30px;
-        padding-bottom: 50px;
-    }
-    
-    .DivVideoHistoria02{
-        display: inline-block;
-        height: 100%;
-        width: 30%;
-        margin-left: 80px;
-        margin-top: 30px;
-        padding-bottom: 50px;
-    }
-    */
