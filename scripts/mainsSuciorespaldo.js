@@ -69,7 +69,6 @@ alert('Bienvenido al primer E-Shop, tenemos opciones limitadas que va a ir creci
 
     
     
-    // while (comprando != "NO"){
 
      //Verifica si el array se recorre/ Si lo esta haciendo    
     for (elementos of arrayProductos){
@@ -77,6 +76,7 @@ alert('Bienvenido al primer E-Shop, tenemos opciones limitadas que va a ir creci
     }   
 
 
+         while (comprando != "NO"){
 
         // tomas los casos adquiridos del prompt y se prentende sumar a la palabra, luego a la variable "compra" que luego es usado en una funcion
         switch(producto){
@@ -107,7 +107,7 @@ alert('Bienvenido al primer E-Shop, tenemos opciones limitadas que va a ir creci
            
             
 
-//     }
+     }
 
 
 
