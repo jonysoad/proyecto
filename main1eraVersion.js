@@ -67,11 +67,13 @@
              break;
             default: console.log ('no es una opcion valida')
             }
-
+            
         comprando = prompt('Desea seguir comprando si/no') 
         //producto = prompt ('Elegir un producto\n 1 - Autito\n 2 - Remera\n 3 - Buzo') lo comente ahora
             
-        }        
+        }    
+        
+        
 
 
      
@@ -84,4 +86,49 @@
 
       pagar(compra);
   
+  ///////////Clase DOM y Eventos//////
+
+      const yerbaMate={
+        id:1,
+        imagen:"../images/despedida.jpeg",
+        nombre:"Yerba mate Taragüi",
+        descripcion:"Yerba mate con palo 1kg",
+        precio:890.0
+    }
     
+    let tarjetas=document.getElementById("tarjetas");
+    tarjetas.innerHTML=`
+        <div class="card" style="width: 18rem;">
+        <img src=${yerbaMate.imagen} class="card-img-top" alt="yerba">
+        <div class="card-body">
+            <h5 class="card-title">${yerbaMate.nombre}</h5>
+            <p class="card-text">${yerbaMate.descripcion}</p>
+            <p class="card-text">$ ${yerbaMate.precio}</p>
+            <button id="miBoton" class="btn btn-primary">Comprar</button>
+        </div>
+        </div>
+    `;
+    
+    let miBoton=document.getElementById("miBoton");
+    //OPCION 1
+    // miBoton.addEventListener("click",interactuar);
+    // function interactuar(){
+    //     alert("Agregaste la yerba mate al carrito");
+    // }
+    
+    //OPCION2
+    miBoton.onclick = () => {
+        console.log("Agregaste la yerba mate al carrito");
+        carrito.push(yerbaMate);
+        console.table(carrito);
+    }
+    
+    miBoton.onmouseover = () => {
+        console.log("Quieres comprar Yerba Mate Taragüi???");
+        miBoton.className="btn btn-danger";
+    }
+    
+    miBoton.onmouseout = () => {
+        miBoton.className="btn btn-primary";
+    }
+   
