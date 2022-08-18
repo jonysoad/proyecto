@@ -28,6 +28,8 @@ function renderizarProductos() {
     })
 }
 
+
+
 function agregarAlCarrito(producto){
     carrito.push(producto);
     console.log(carrito);
@@ -42,6 +44,9 @@ function agregarAlCarrito(producto){
     localStorage.setItem("carrito",JSON.stringify(carrito));
     //sumar el total de la compra
 }
+
+carrito = JSON.parse(localStorage.getItem('carrito')) || [] //necesito que se vea en pantalla lo que fue abandonado pero no lo logro encontrar.
+console.log(carrito)
 
 //agregar un boton de finalizar compra -> borrado de estructuras, mensaje al usuario de que
 //su pedido está en proceso de preparacion y entrega.
