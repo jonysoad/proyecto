@@ -33,7 +33,14 @@ function renderizarProductos() {
 function agregarAlCarrito(producto){
     carrito.push(producto);
     console.log(carrito);
-    alert("Producto: "+producto.nombre+" agregado al carro!");
+    //alert("Producto: "+producto.nombre+" agregado al carro!");
+    Swal.fire (
+        "Producto: "+producto.nombre,
+        "Agregado al Carrito",
+        "success"
+
+    );
+
     document.getElementById("tablabody").innerHTML+=`
         <tr>
             <td>${producto.id}</td>
@@ -47,6 +54,18 @@ function agregarAlCarrito(producto){
 
 carrito = JSON.parse(localStorage.getItem('carrito')) || [] //necesito que se vea en pantalla lo que fue abandonado pero no lo logro encontrar.
 console.log(carrito)
+
+let finalizar=document.getElementById("finalizar");
+    finalizar.onclick=()=>{
+        Swal.fire({
+            title: 'Pedido confirmado!',
+            text: 'Estamos preparando el envio.',
+            imageUrl: 'https://images5.alphacoders.com/499/thumb-350-499109.jpg',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+          })
+    }
 
 //agregar un boton de finalizar compra -> borrado de estructuras, mensaje al usuario de que
 //su pedido está en proceso de preparacion y entrega.
