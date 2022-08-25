@@ -68,7 +68,7 @@ let finalizar=document.getElementById("finalizar");
     }
 
 //agregar un boton de finalizar compra -> borrado de estructuras, mensaje al usuario de que
-//su pedido está en proceso de preparacion y entrega.
+//su pedido está en proceso de preparacion y entrega, prueba
 
 //poder eliminar productos de la tabla y de todas las estructuras de carro
 
